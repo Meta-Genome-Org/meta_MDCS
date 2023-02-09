@@ -1,5 +1,5 @@
 core_main_app==2.1.*
-ccore_composer_app==2.1.*
+core_composer_app==2.1.*
 core_curate_app==2.1.*
 core_dashboard_common_app==2.1.*
 core_dashboard_app==2.1.*
