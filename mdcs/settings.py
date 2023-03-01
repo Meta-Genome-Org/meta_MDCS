@@ -34,6 +34,11 @@ ALLOWED_HOSTS = (
     else []
 )
 
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:5000',
+)
+
 # Databases
 
 DATABASES = {
@@ -87,6 +92,7 @@ INSTALLED_APPS = (
     "oauth2_provider",
     # Extra apps
     "rest_framework",
+    "corsheaders",
     "drf_yasg",
     "menu",
     "tz_detect",
@@ -136,6 +142,7 @@ MIDDLEWARE = (
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "tz_detect.middleware.TimezoneMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 )
 
 
