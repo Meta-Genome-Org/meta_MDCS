@@ -39,12 +39,18 @@ from core_main_app.utils.labels import get_form_label, get_data_label
 
 Menu.add_item(
     "nodropdown",
-    MenuItem("Home", reverse("core_main_app_homepage"), icon="home"),
+    MenuItem("Home", "https://meta-genome.org", icon="home")
+)
+
+Menu.add_item(
+    "nodropdown",
+    MenuItem("Portal", reverse("core_main_app_homepage"))
 )
 
 Menu.add_item(
     "nodropdown", MenuItem(CURATE_MENU_NAME, reverse("core_curate_index"))
 )
+
 Menu.add_item(
     "explorer",
     MenuItem("Search by Keyword", reverse("core_explore_keyword_app_search")),
