@@ -1,8 +1,8 @@
 core_main_app[mongodb]==2.1.*
 git+https://github.com/Meta-Genome-Org/core_composer_app#egg=core_composer_app
 core_curate_app==2.1.*
-core_dashboard_common_app==2.1.*
-core_dashboard_app==2.1.*
+git+https://github.com/Meta-Genome-Org/core_dashboard_common_app#egg=core_dashboard_common_app
+git+https://github.com/Meta-Genome-Org/core_dashboard_app#egg=core_dashboard_app
 core_explore_example_app==2.1.*
 core_explore_keyword_app==2.1.*
 core_explore_federated_search_app==2.1.*
