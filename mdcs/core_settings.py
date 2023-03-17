@@ -179,6 +179,6 @@ GA_TRACKING_ID = os.getenv("GA_TRACKING_ID", None)
 """ :py:class:`str`: Google Analytics tracking ID. Adds gtag to user pages if set.
 """
 
-CAN_ANONYMOUS_ACCESS_PUBLIC_DOCUMENT = True
+CAN_ANONYMOUS_ACCESS_PUBLIC_DOCUMENT = False
 """ :py:class:`bool`: Can anonymous user access public document.
 """
